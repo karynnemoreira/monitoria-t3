@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(220, 245, 220);
+  display: flex; //Ativando as caixas flexíveis
+  justify-content: space-around; //Trabalha o eixo x - horizontal
+  align-items: center; //Trabalha o eixo y - vertical
+  height: 15vh;
+  font-family: "Oswald";
+
+  h2 {
+    border: solid red;
+    width: 20%;
+  }
+
+  nav {
+    border: solid purple;
+    width: 60%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  button {
+    border: solid orange;
+    width: 10%;
+  }
+}
+
+//Header para o mobile / celular
+//mínimo da largura da tela e máximo da largura da tela
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    height: 30vh;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    display: none; //Faz com que o seletor suma
+  }
+
+  header button {
+    width: 20%;
+    height: 5vh;
+  }
+}
+
+//---MONITORIA---
+
+//Para chamar uma class utilizamos o .    .nome da class criada
+.container-background-image {
+  height: 80vh;
+  background-color: aquamarine;
+  background-image: url("./imagens/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  h1 {
+    color: #ffffff;
+    font-size: 6rem;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 2rem;
+  }
+}

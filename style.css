@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(220, 245, 220);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+  font-family: "Oswald";
+}
+header h2 {
+  border: solid red;
+  width: 20%;
+}
+header nav {
+  border: solid purple;
+  width: 60%;
+}
+header ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+header a {
+  text-decoration: none;
+}
+header button {
+  border: solid orange;
+  width: 10%;
+}
+
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    height: 30vh;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    display: none;
+  }
+  header button {
+    width: 20%;
+    height: 5vh;
+  }
+}
+.container-background-image {
+  height: 80vh;
+  background-color: aquamarine;
+  background-image: url("./imagens/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.container-background-image h1 {
+  color: #ffffff;
+  font-size: 6rem;
+}
+.container-background-image p {
+  color: #ffffff;
+  font-size: 2rem;
+}/*# sourceMappingURL=style.css.map */
